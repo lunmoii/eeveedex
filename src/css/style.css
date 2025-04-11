@@ -1,0 +1,235 @@
+
+    @import url('https://fonts.cdnfonts.com/css/common-pixel');
+
+    *{
+        font-family: 'Common Pixel', sans-serif;
+    }
+    
+    body{
+        background-image: url(../imagens/daybg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body.modo-escuro{
+        background-image: url(../imagens/nightbg.png);
+    }
+
+    header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+    }
+
+    .header-overlay {
+        display: flex;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0));
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo {
+        width: 280px;
+        height: 135px;
+        transition: 0.2s ease-in-out;
+    }
+
+    header .pokeball, .shiny, .sun{
+        width: 60px;
+        padding: 10px;
+    }
+
+    header #sol, #shiny, #pokebola{
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .escolher-cor{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .pokebola, .sol{
+        width: 40px;
+        align-items: center;
+        display: flex;
+        background: none;
+    }
+
+    .shiny{
+        width: 80px;
+    }
+     
+    .shiny:hover,
+    .sol:hover{
+    transform: scale(1.05);
+    display: inline-block;
+    }
+
+    .pokebola:hover{
+        transform: scale(1.05);
+    }
+
+
+    h1{
+        letter-spacing: 5px;
+    }
+
+    .eeveedex{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        min-height: calc(100vh - 152px);
+        justify-content: center;
+    }
+
+    
+    .evolucoes{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .lista{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px auto;
+        text-align: center;
+        gap: 30px;
+        max-width: 1100px;
+    }
+
+    .poke-card{
+        width: 200px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(../imagens/daysky.png);
+        border-radius: 10px;
+        margin: 20px;
+        padding: 20px;        
+    }
+
+    .modo-escuro .poke-card{
+        background-image: url(../imagens/nightsky.png);
+        color: #fff;
+    }
+
+    .poke-card:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    .imagem-pokemon{
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        width: 55px;
+    }
+
+    .info{
+        margin-top:20px;
+    }
+
+    .number, .name{
+        margin-top: 5px;
+    }
+
+    .name{
+        text-transform: uppercase;
+    }
+
+    .descricao{
+        margin-top: 10px;
+        font-size: 15px;
+        max-height: 60px;
+        overflow-y: scroll;
+        background-color: #fff;
+        border-radius: 10px;
+        padding-right: 10px;
+        color: #000000;
+    }
+
+    .sylveon{
+        width: 50px;
+        height: auto;
+    }
+
+    .normal{
+        background-color: #7e7e7e;
+        padding: 2px 10px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+    }
+
+    .water{
+        background-color: #67a3e7;
+        padding: 2px 10px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+    }
+
+    .grass{
+        background-color: #54B435;
+        padding: 2px 10px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+    }
+
+    .fire{
+        background-color: #F29727;
+        padding: 2px 10px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+    }
+
+    .electric{
+        background-color: #f7eb41;
+        padding: 2px 10px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+    }
+
+    .psychic{
+        background-color: #eb31f1;
+        padding: 2px 10px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+    }
+
+    .dark{
+        background-color: #000000;
+        padding: 2px 10px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        color: #ffffff;
+    }
+
+    .ice{
+        background-color: #7d94d3;
+        padding: 2px 10px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+    }
+
+    .fairy{
+        background-color: #fd97c7;
+        padding: 2px 10px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+    }
+
+
+
